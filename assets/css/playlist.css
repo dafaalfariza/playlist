@@ -1,0 +1,166 @@
+body {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+}
+
+.introjudul {
+  font-size: 2rem;
+  padding-left: 40px;
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+}
+
+.introjudulutama {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+}
+
+.introp {
+  font-family: monospace;
+  font-size: 1.3rem;
+  text-indent: 40px;
+  color: #fff;
+}
+
+.intronop {
+    color: #fff;
+    font-family: monospace;
+    font-size: 1.3rem;
+}
+
+ul.bullet {
+  list-style-type: disc; /* bulat penuh */
+  list-style-position: outside; /* bullet di luar text */
+  margin-left: 20px; /* kasih jarak ke kiri */
+  padding-left: 20px; /* penting kalau bullet hilang */
+  color: yellowgreen;
+}
+
+code {
+  background-color: #515151; /* abu-abu gelap */
+  padding: 2px 2px;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+pre,
+pre code {
+  white-space: pre-wrap;   /* pastikan spasi ditampilkan normal */
+  margin: 0.em 0;      /* kasih jarak atas-bawah */
+  border-radius: 8px; /* biar rounded */
+}
+
+pre.mini code {
+  max-height: 350px;
+}
+
+.language-html,
+.language-css,
+.language-js {
+  font-size: 1.4rem;
+}
+
+/* Playlist layout */
+.playlist-container {
+  display: flex;
+  gap: 20px;
+  margin: 30px auto;
+  max-width: 1100px;
+  padding: 20px;
+}
+
+/* Sidebar selalu nempel di kiri */
+.playlist-sidebar {
+  position: fixed;
+  top: 90px;                /* sesuaikan dengan tinggi navbar */
+  left: 20px;
+  width: 220px;
+  height: calc(100% - 100px); /* tinggi penuh layar dikurangi navbar */
+  overflow-y: auto;          /* biar bisa scroll sendiri kalau terlalu panjang */
+  background: rgba(255, 255, 255, 0.08);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.playlist-sidebar h2 {
+  font-size: 1.4rem;
+  color: yellowgreen;
+  margin-bottom: 10px;
+}
+
+.playlist-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.playlist-sidebar li {
+  margin-bottom: 14px;
+}
+
+.playlist-sidebar a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.playlist-sidebar a:hover {
+  color: yellowgreen;
+}
+
+/* Konten geser ke kanan karena sidebar fixed */
+.playlist-content {
+  margin-left: 260px; /* kasih space sesuai lebar sidebar */
+  flex: 1;
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  color: #fff;
+}
+
+.song {
+  margin-bottom: 40px;
+  scroll-margin-top: 100px; /* sesuaikan dengan tinggi navbar */
+}
+
+.song h3 {
+  color: yellowgreen;
+  margin-bottom: 10px;
+}
+
+.song p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  white-space: pre-line;
+  line-height: 0.8;
+}
+
+    
+
+/* Mobile */
+@media (max-width: 468px) {
+  .introjudul {
+    font-size: 1.5rem;
+    padding-left: 20px;
+  }
+
+  .introjudulutama {
+    font-size: 1.8rem;
+  }
+
+  .introp {
+    margin: 0 20px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+}
+
+@media (min-width: 769px) {
+}
